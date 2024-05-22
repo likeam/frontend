@@ -1,8 +1,15 @@
 import React from 'react'
+import Hero from '../components/Hero'
+import hero from '../assets/hero.png'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+    <Hero  title={
+          "Welcome to ZeeCare Medical Institute | Your Trusted Healthcare Provider"
+        }
+        imageUrl={hero} />
+    </>
   )
 }
 
