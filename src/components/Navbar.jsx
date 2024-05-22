@@ -1,9 +1,35 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
+import "../styles/Navbar.css";
 
 const Navbar = () => {
+  
   return (
-    <div>Navbar</div>
-  )
-}
+    <nav>
+      <div className="logo">
+        <Link to="/">
+          <img src={logo} alt="logo" className="logo-img" />
+        </Link>
+      </div>
+      <div className="navLinks">
+        <div className="links">
+          <Link to="/" className="link">Home</Link>
+          <Link to="/appointmet" className="link">Appointmet</Link>
+          <Link to="/about" className="link">About</Link>
+        </div>
+        <div className="buttons">
+          <>
+            <Link to='login' className="loginBtn btn">
+              Login
+            </Link>
+            <Link to='register' className="registerBtn btn">Register</Link>
+          </>
 
-export default Navbar
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
