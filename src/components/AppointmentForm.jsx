@@ -2,6 +2,8 @@ import axios from "axios";
 import React, { lazy, useEffect, useState } from "react";
 import { toast } from "react-toastify";
 
+
+
 const AppointmentForm = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -95,28 +97,33 @@ const AppointmentForm = () => {
 
   return (
     <>
-      <div className="container form-component appointment-form">
+      <div className= "container form-component message-form">
         <h2>Appointment</h2>
         <form onSubmit={handleAppointment}>
-          <div>
-            <input
+        
+           <div>
+           <input
               type="text"
               placeholder="First Name"
               value={firstName}
               onChange={(event) => setFirstName(event.target.value)}
             />
+           </div>
+            <div>
             <input
               type="text"
               placeholder="Last Name"
               value={lastName}
               onChange={(event) => setLastName(event.target.value)}
             />
+            </div>
             <input
               type="text"
               placeholder="Email"
               value={email}
               onChange={(event) => setEmail(event.target.value)}
             />
+            
             <input
               type="number"
               placeholder="Mobile Number"
@@ -186,7 +193,7 @@ const AppointmentForm = () => {
                   </option>
                 ))}
             </select>
-          </div>
+          
           <textarea
             placeholder="Adresse"
             rows="10"

@@ -9,7 +9,7 @@ nav {
 }
 
 .logo-img {
-  width: 120px; /* Adjust size as needed */
+  width: 100px; /* Adjust size as needed */
 }
 
 .navLinks {
@@ -67,7 +67,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: #111; /* Change the background color as needed */
-  padding: 20px;
+  padding: 10px;
+  margin-bottom: 4px;
 }
 
 .logo {
@@ -75,7 +76,7 @@ nav {
 }
 
 .logo-img {
-  width: 150px;
+  width: 100px;
 }
 
 .navLinks {

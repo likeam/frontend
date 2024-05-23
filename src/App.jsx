@@ -7,20 +7,21 @@ import Appointment from "./pages/Appointment";
 import About from "./pages/About";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
+import Hero from "./components/Hero";
+import AppointmentForm from "./components/AppointmentForm";
+import MessageForm from "./components/MessageForm";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
     <>
-      <Router>
+
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/appointment" element={<Appointment />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/login" element={<Login />} />
-        </Routes>
-      </Router>
+        <Home />
+        <Appointment />
+        <MessageForm />
+        <Footer />
+     
     </>
   );
 };
