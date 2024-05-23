@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 
-const Hero = ({title, imageUrl}) => {
+const Hero = ({ title, imageUrl }) => {
   return (
     <>
       <div className="hero container">
         <div className="banner">
           <h1>{title}</h1>
           <p>
-          ZeeCare Medical Institute is a state-of-the-art facility dedicated
+            ZeeCare Medical Institute is a state-of-the-art facility dedicated
             to providing comprehensive healthcare services with compassion and
             expertise. Our team of skilled professionals is committed to
             delivering personalized care tailored to each patient's needs. At
@@ -16,14 +16,14 @@ const Hero = ({title, imageUrl}) => {
           </p>
         </div>
         <div className="banner">
-          <img src={imageUrl} alt="hero" className=" animated-image"   />
+          <img src={imageUrl} alt="hero" className=" animated-image" />
           <span>
             <img src="" alt="vector" />
           </span>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

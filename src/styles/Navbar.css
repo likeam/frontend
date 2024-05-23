@@ -2,7 +2,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 2px 20px;
     background-color: #212121; /* Adjust color as needed */
     max-width: 1200px; /* Set maximum width */
     margin: 0 auto; /* Center the navbar */
@@ -67,7 +67,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: #111; /* Change the background color as needed */
-    padding: 20px;
+    padding: 2px 20px;
+    margin-bottom: 2px;
   }
   
   .logo {
