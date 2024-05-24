@@ -10,24 +10,33 @@ const Navbar = () => {
   return (
     <nav>
       <div className="logo">
-        <a >
-          <img src={logo}  alt="logo" className="logo-img" />
-        </a>
+        <Link to="/">
+          <img src={logo} alt="ZeeCare Medical Institute" className="logo-img" />
+        </Link>
       </div>
       <div className="navLinks">
         <div className="links">
-          <a  className="link">Home</a>
-          <a  className="link">Appointmet</a>
-          <a  className="link">About</a>
+          <Link to="/" className="link">
+            Home
+          </Link>
+          <Link to="/appointment" className="link">
+            Appointment
+          </Link>
+          <Link to="/about" className="link">
+            About
+          </Link>
         </div>
         <div className="buttons">
-          <>
-            <a  className="loginBtn btn">
-              Login
-            </a>
-            <a className="registerBtn btn">Register</a>
-          </>
-
+          
+            <>
+              <Link to="/login" className="loginBtn btn">
+                Login
+              </Link>
+              <Link to="/register" className="registerBtn btn">
+                Register
+              </Link>
+            </>
+          
         </div>
       </div>
     </nav>

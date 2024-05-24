@@ -11,16 +11,23 @@ import Hero from "./components/Hero";
 import AppointmentForm from "./components/AppointmentForm";
 import MessageForm from "./components/MessageForm";
 import Footer from "./components/Footer";
+import { ToastContainer } from "react-toastify";
 
 const App = () => {
   return (
     <>
-
+<Router>
         <Navbar />
-        <Home />
-        <Appointment />
-        <MessageForm />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/appointment" element={<Appointment />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
         <Footer />
+        <ToastContainer position="top-center" />
+      </Router>
      
     </>
   );
