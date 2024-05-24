@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Biography = () => {
+const Biography = ({imageUrl}) => {
   return (
     <>
       <div className="container biography">
         <div className="banner">
-          <img src="" alt="" />
+          <img src={imageUrl} alt="url" />
         </div>
         <div className="banner">
           <p>Biography</p>
